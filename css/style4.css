@@ -1,0 +1,106 @@
+section.contact {
+    margin: 0 5%;
+    background-image: linear-gradient(black, rgba(0,0,0,0), rgba(0,0,0,0), rgb(44, 53, 107));
+    color: white;
+    border-radius: 10px;
+}
+
+section.contact h2 {
+    margin: 0;
+    text-align: center;
+    font-size: clamp(45px, 5vw, 65px);
+    padding: clamp(10px, 5vw, 20px);
+}
+
+h3 {
+    font-size: 1.65rem;
+    margin: 1% 0;
+}
+
+section.contact > h3 {
+    text-align: center;
+}
+
+form {
+    margin: 0;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+textarea.message {
+    width: 80%;
+    height: 2in;
+    outline: none;
+    font-size: 3ch;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+input {
+    width: 35%;
+    height: clamp(4ch, 5vw, 6ch);
+    outline: none;
+    font-size: 3ch;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+form > input[type="submit"] {
+    border: 2px solid black;
+    background-color: black;
+    margin: 2% 0;
+    color: white;
+    font-size: 2rem;
+}
+
+form > input[type="submit"]:hover {
+    background-color: white;
+    color: black;
+}
+
+form > input[type="submit"]:active {
+    background-color: gray;
+    color: white;
+}
+
+input::placeholder,
+section.contact textarea::placeholder {
+    color: rgb(87, 146, 19);
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.2rem;
+}
+
+input:focus::placeholder,
+section.contact textarea:focus::placeholder {
+    color: transparent;
+}
+
+input,
+section.contact textarea{
+    border: 3px solid;
+    border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+    
+    textarea.message {
+        height: 2.5in;
+        font-size: 2ch;
+    }
+    input {
+        width: 80%;
+        font-size: 2ch;
+    }
+
+    input::placeholder,
+    section.contact textarea::placeholder {
+        font-size: 0.8rem;
+    }
+
+    form > input[type="submit"] {
+        font-size: 1.2rem; 
+    }
+
+}
+
+form.form {
+    padding: 5%;
+}

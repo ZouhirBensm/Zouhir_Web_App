@@ -1,0 +1,160 @@
+html {
+    font-family: 'PT Sans Narrow', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: rgb(12, 12, 14);
+    
+}
+
+div.wrapper {
+    margin: 0 1%;
+}
+
+section.home {
+    background-image: url(../img/uno.jpg);
+    background-size: cover;
+}
+
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    font-size: 55px;
+}
+
+header.banner{
+    margin: 0%;
+    background-position: center;
+    height: 100vh;
+}
+
+nav.main-nav#important {
+    display: flex;
+    padding: 3%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+div#myLinks {
+    justify-content: space-evenly;
+    width: 100%;
+    min-width: 732px;    
+}
+
+nav.main-nav div > a {
+    background-color: #253c96;
+    padding: 2% 2%;
+    margin: 2.5% 1%;
+    color: white;
+    border: white 2px solid;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.65rem;
+}
+
+
+nav.main-nav div > a:hover {
+    background-color: rgb(129, 228, 31);
+    text-decoration: none;
+    color: black;
+}
+
+.main-nav a.icon{
+    display: block;
+    color: white;
+}
+
+@media (max-width: 1000px){
+  
+    .main-nav a.icon i {
+        visibility: visible;
+    }
+
+    div#myLinks{
+        min-width: 0;
+        display: block;
+    }
+
+    nav.main-nav div{
+        flex-direction: column;
+        text-align: center;
+    }
+
+     .main-nav {
+        overflow: hidden;
+        position: relative;
+        display: block;
+    }
+
+    .main-nav #myLinks {
+        display: none;
+    }
+
+    .main-nav a {
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 1rem;
+        display: block;
+    }
+
+}
+
+@media (max-width: 250px) {
+
+    html {
+        min-width: 250px;
+    }
+
+    header > div.banner {
+        visibility: hidden;        
+    }
+
+    .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+        font-size: 25px;
+    }
+
+}
+
+header img {
+    height: clamp(40px,5vw,60px);
+    width: clamp(40px,5vw,60px);
+    padding: 3%;
+    margin: 2%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+header img:hover {
+    background-color: chartreuse;
+}
+
+header {
+    position: relative;
+    overflow: hidden;    
+}
+
+header > div.banner {
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    left: 10%;
+    right: 50%;
+    transform: translateY(-50%);
+    height: fit-content;
+    color: white;
+    padding: 20px; 
+    min-width: 156px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+div.banner h1 {
+    margin: 0;
+    font-size: clamp(30px, 5vw, 85px);
+}
+
+div.banner p {  
+    font-size: clamp(10px, 1.7vw, 30px);
+}
